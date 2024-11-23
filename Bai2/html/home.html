@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/all.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/itf.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0; 
+            color: white; 
+            background-image: url('../img/hero-bg.jpg');
+        }
+        .container-fluid {
+            height: 800px;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container-fluid" >
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container">
+                <a href="#" class="navbar-brand text-white" style="font-family: font1;">Feane</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../html/home.html" class="nav-link text-warning">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/menu.html" class="nav-link text-white">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/about.html" class="nav-link text-white">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/book.html" class="nav-link text-white">BOOK TABLE</a>
+                    </li>
+                </ul>
+                <a href="#"><i class="fa-solid fa-user text-white ml-5"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping text-white ml-3"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass text-white ml-3"></i></a>
+                <button class="btn btn-warning ml-3 custom-rounded" type="button" data-toggle="modal" data-target="#order">Order Online</button>
+            <!--Modal-->
+            <div class="modal" id="order">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-warning">Order</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="../html/order.html" width="100%" height="250px;" frameborder="0"></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-warning" value="Order"></input>
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Dimiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6" style="margin-left: 200px; margin-top: 100px;">
+                    <h2 class="display-6" style="font-family: font1;">Fast Food Restaurant</h2>
+                    <p style="color: rgb(162, 162, 162);">
+                        Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    </p>
+                    <button class="btn btn-warning custom-rounded" type="button" data-toggle="modal" data-target="#order">Order Now</button>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

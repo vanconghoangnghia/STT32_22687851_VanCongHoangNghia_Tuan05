@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <link rel="stylesheet" href="../css/itf.css">
+    <title>Book</title>
+    <style>
+        img {
+            width: 515px;
+            height: 265px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand text-white" style="font-family: font1;">Feane</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../html/home.html" class="nav-link text-white">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/menu.html" class="nav-link text-white">MENU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/about.html" class="nav-link text-white">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-warning">BOOK TABLE</a>
+                    </li>
+                </ul>
+                <a href="#"><i class="fa-solid fa-user text-white ml-5"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping text-white ml-3"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass text-white ml-3"></i></a>
+                <button class="btn btn-warning ml-3 custom-rounded" type="button" data-toggle="modal" data-target="#order">Order Online</button>
+                <!--Modal-->
+                <div class="modal" id="order">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title text-warning">Order</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="../html/order.html" width="100%" height="250px;" frameborder="0"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-warning" value="Order"></input>
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Dimiss</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <form action="#" style="padding-left: 150px;">
+                        <h2 style="font-family: font1;">Book A Table</h2>
+                        <input type="text" class="mt-3 form-control form-group" placeholder="Your Name">
+                        <input type="text" class="form-control form-group" placeholder="Phone Number">
+                        <input type="text" class="form-control form-group" placeholder="Your Email">
+                        <input type="text" class="form-control form-group" placeholder="How many person?">
+                        <input type="date" class="form-control form-group">
+                        <button class="btn btn-warning custom-rounded mt-4">BOOK NOW!</button>
+                    </form>
+                </div>
+                <div class="col-6 pt-5" style="margin-top: 45px;">
+                    <img class="float-left" src="../img/map.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

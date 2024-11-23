@@ -1,0 +1,7 @@
+@font-face {
+    font-family: font1;
+    src: url("../fonts/fontawesome-webfont.ttf");
+}
+.custom-rounded {
+    border-radius: 50px;
+}
